@@ -23,11 +23,15 @@ This is a website that displays top headlines in the US by fetching data from th
 
   <h2> Desktop preview: </h2>
 
+![Home Page (desktop)](https://user-images.githubusercontent.com/123911665/280388909-57580f04-3f0a-4ee3-940a-1ff4a4e8c691.png)
+![Article Details](https://user-images.githubusercontent.com/123911665/280389237-eb9fff36-5522-457e-b559-9a0026274937.png)
+
 
   <br>
 
   <h2> Mobile preview: </h2>
 
+![Mobile Preview](https://user-images.githubusercontent.com/123911665/280389022-d88aa3c5-01cb-47be-b466-179af3d56a1e.png)
 
 </div>
 
