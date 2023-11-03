@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ArticleList from './ArticleList';
 import ArticleDetail from './ArticleDetail';
 import { getNews } from './apiCalls';
+import Header from './Header'
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -25,6 +26,7 @@ function App() {
   return (
     <Router>
       <div>
+        <Header />
         <input
           type="text"
           value={searchTerm}

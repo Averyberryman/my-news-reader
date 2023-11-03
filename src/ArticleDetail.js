@@ -13,9 +13,10 @@ function ArticleDetail({ articles }) {
     <article>
       <h1>{article.title}</h1>
       <img src={article.urlToImage} alt={article.title} />
-      <p>{article.publishedAt}</p>
+      <p>{new Date(article.publishedAt).toLocaleString()}</p>
       <p>{article.content}</p>
       <p>Source: {article.source.name}</p>
+      <a href={article.url} target="_blank" rel="noopener noreferrer">Read full article</a>
     </article>
   );
 }
