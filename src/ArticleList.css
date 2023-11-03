@@ -1,26 +1,33 @@
-.Article {
-    text-align: left;
+.ArticleList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
   }
   
-  .Article-title {
-    font-size: 1.5em;
-    color: #333;
+  .ArticleList-item {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 16px);
+    text-decoration: none;
+    color: inherit;
   }
   
-  .Article-meta {
-    font-size: 0.85em;
-    color: #666;
-    margin-bottom: 10px;
+  .ArticleList-item .article {
+    padding: 16px;
   }
   
-  .Article-description {
-    font-size: 1em;
-    color: #444;
+  @media (max-width: 768px) {
+    .ArticleList-item {
+      width: calc(50% - 16px);
+    }
   }
   
-  .Article-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+  @media (max-width: 480px) {
+    .ArticleList-item {
+      width: 100%;
+    }
   }
   
