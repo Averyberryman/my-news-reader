@@ -1,14 +1,12 @@
 import { useParams } from 'react-router-dom';
-import mockData from './mockData';
 import './ArticleDetail.css';
 
-function ArticleDetail() {
+function ArticleDetail({ articles }) {
   let { id } = useParams();
-  const articleIndex = parseInt(id, 10);
-  const article = mockData.articles[articleIndex];
+  const article = articles[parseInt(id, 10)];
 
   if (!article) {
-    return <div>Article not found</div>;
+    return <div>Loading article...</div>;
   }
 
   return (
