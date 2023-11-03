@@ -1,19 +1,18 @@
 import React from 'react';
-import ArticleList from './ArticleList'
-import './App.css'
-import './Header.css'
+import ArticleList from './ArticleList';
+import ArticleDetail from './ArticleDetail';
+import './App.css';
 import mockData from './mockData';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>News Articles</h1>
-      </header>
-      <main>
-        <ArticleList articles={mockData.articles} />
-      </main>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ArticleList articles={mockData.articles} />} />
+        <Route path="/articles/:id" element={<ArticleDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
